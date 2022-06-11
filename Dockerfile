@@ -1,11 +1,6 @@
-FROM ubuntu:18.04
-RUN apt-get update
-RUN apt-get install curl -y
-RUN curl -sL https://deb.nodesource.com/setup_10.x | bash
-RUN apt-get install nodejs -y
-WORKDIR /opt/node-app
-COPY . /opt/node-app/
-ENV channel=Mucobaba
-
-#CMD ["node", "/opt/node-app/index.js"];
-CMD ["node", "index.js"];
+FROM node:14
+WORKDIR /usr/src/app
+COPY package*.json app.js ./
+RUN npm install
+EXPOSE 3000
+CMD ["node", "app.js"]

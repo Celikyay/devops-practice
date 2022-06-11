@@ -1,0 +1,23 @@
+{
+  "name": "devops-practice",
+  "version": "1.0.0",
+  "description": "apt-get update \r apt-get install curl -y \r curl -sL https://deb.nodesource.com/setup_10.x | bash \r apt-get install nodejs -y \r cd opt/ \r mkdir node-app \r cd node-app/ \r echo 'console.log(\"nodejsapp from ubuntu...\");' > index.js\r cat index.js \r node index.js",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/steelarch/devops-practice.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/steelarch/devops-practice/issues"
+  },
+  "homepage": "https://github.com/steelarch/devops-practice#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}
